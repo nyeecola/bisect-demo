@@ -8,7 +8,7 @@ def main():
     ap.add_argument('n', help='Number to square', type=int)
     args = ap.parse_args()
 
-    n = args.n
+    n = abs(args.n)
 
     ref = 0
     for i in range(n):
